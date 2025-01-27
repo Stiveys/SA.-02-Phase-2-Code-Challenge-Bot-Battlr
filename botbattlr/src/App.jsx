@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [bots, setBots] = useState([]);
   const [armyBots, setArmyBots] = useState([]);
-  const [sort, setSort] = useState(''); // New state to store the current sort option
+  const [sort, setSort] = useState(''); 
 
   useEffect(() => {
     fetch('http://localhost:8001/bots')
