@@ -6,10 +6,10 @@ import './App.css';
 function App() {
   const [bots, setBots] = useState([]);
   const [armyBots, setArmyBots] = useState([]);
-  const [sort, setSort] = useState(''); 
+  const [sort, setSort] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:8001/bots')
+    fetch('https://bots-si0g.onrender.com/bots')
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch bots');
         return res.json();
@@ -29,7 +29,7 @@ function App() {
   };
 
   const dischargeBot = (botId) => {
-    fetch(`http://localhost:8001/bots/${botId}`, { method: 'DELETE' })
+    fetch(`https://bots-si0g.onrender.com/bots/${botId}`, { method: 'DELETE' })
       .then(() => {
         setBots(bots.filter(b => b.id !== botId));
         setArmyBots(armyBots.filter(b => b.id !== botId));
