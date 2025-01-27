@@ -35,6 +35,7 @@ function App() {
         setArmyBots(armyBots.filter(b => b.id !== botId));
       });
   };
+  
 
   const handleSort = (option) => {
     setSort(option);
