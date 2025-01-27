@@ -83,8 +83,8 @@ h1, h2 {
 }
 
 .sort-button {
-  background-color: #000; /* Black */
-  color: #fff; /* White */
+  background-color: #000; 
+  color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -94,9 +94,9 @@ h1, h2 {
 }
 
 .sort-button:hover {
-  background-color: #333; /* Darker gray */
+  background-color: #333;
 }
 
 .sort-button:active {
-  background-color: #444; /* Even darker gray */
+  background-color: #444;
 }
